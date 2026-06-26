@@ -1,14 +1,13 @@
 #include <iostream>
-using namespace std;
 
 int main() {
-    int i = 1;
-    while (i <= 10) {
-        if (i % 2 == 0) {
-            cout << i << " ";  // only prints even numbers
-        }
-        i++;
-    }
-    cout << endl;
+    int num1, num2;
+    std::cout << "Enter two integers: ";
+    std::cin >> num1 >> num2;
+
+    int larger = (num1 > num2) ? num1 : num2;
+
+    std::cout << "The larger number is: " << larger << "\n";
+
     return 0;
 }
