@@ -1,11 +1,15 @@
 #include <iostream>
-using namespace std;
 
 int main() {
-    for (int i = 1; i <= 10; i++) {
-        if (i % 2 == 0) continue;  // skip even numbers
-        cout << i << " ";
+    int num;
+    std::cout << "Enter an integer: ";
+    std::cin >> num;
+
+    if (num % 2 != 0) {
+        std::cout << "Odd number\n";
+    } else {
+        std::cout << "Even number\n";
     }
-    cout << endl;
+
     return 0;
 }
