@@ -1,27 +1,13 @@
 #include <iostream>
-using namespace std;
 
 int main() {
-    int score;
+    double num1, num2;
+    std::cout << "Enter two floating-point numbers: ";
+    std::cin >> num1 >> num2;
 
-    cout << "Enter your exam score: ";
-    cin >> score;
+    double larger = (num1 > num2) ? num1 : num2;
 
-    if (score >= 90) {
-        cout << "Grade: A - Excellent!" << endl;
-    }
-    else if (score >= 80) {
-        cout << "Grade: B - Very Good!" << endl;
-    }
-    else if (score >= 70) {
-        cout << "Grade: C - Good!" << endl;
-    }
-    else if (score >= 60) {
-        cout << "Grade: D - Pass!" << endl;
-    }
-    else {
-        cout << "Grade: F - Failed!" << endl;
-    }
+    std::cout << "The larger number is: " << larger << "\n";
 
     return 0;
 }
