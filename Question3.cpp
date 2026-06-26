@@ -1,21 +1,15 @@
 #include <iostream>
 
-using namespace std;
-
 int main() {
-    int num, largest;
+    int a, b, c;
+    std::cout << "Enter three integers: ";
+    std::cin >> a >> b >> c;
 
-    cout << "Enter a number (0 to exit): ";
-    cin >> num;
-    largest = num;
-
-    while (num != 0) {
-        cout << "Enter a number (0 to exit): ";
-        cin >> num;
-        if (num > largest)
-            largest = num;
+    if (a == b && b == c) {
+        std::cout << "Equal\n";
+    } else {
+        std::cout << "Not equal\n";
     }
 
-    cout << "Largest number: " << largest << endl;
     return 0;
 }
