@@ -1,21 +1,11 @@
 #include <iostream>
-using namespace std;
 
 int main() {
-    int x = 10;
+    int x; 
+    x = 10; // Assignment: assigns the value 10 to variable x
 
-    // while loop - condition false, never runs
-    cout << "while loop: ";
-    while (x < 5) {
-        cout << "This won't print";
+    if (x == 10) { // Equality: checks if x is equal to 10
+        std::cout << "x is equal to 10\n";
     }
-    cout << "Nothing printed!" << endl;
-
-    // do-while - runs ONCE even if condition is false
-    cout << "do-while loop: ";
-    do {
-        cout << "This prints once!" << endl;
-    } while (x < 5);
-
     return 0;
 }
