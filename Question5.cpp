@@ -1,17 +1,15 @@
 #include <iostream>
-using namespace std;
 
 int main() {
-    int num, sum = 0;
+    int first, second;
+    std::cout << "Enter two integers: ";
+    std::cin >> first >> second;
 
-    cout << "Enter numbers (non-multiple of 3 to stop): ";
-    cin >> num;
-
-    while (num % 3 == 0) {
-        sum += num;
-        cin >> num;
+    if (first > second) {
+        std::cout << "First value is greater\n";
+    } else {
+        std::cout << "Second value is greater\n";
     }
 
-    cout << "Sum of multiples of 3: " << sum << endl;
     return 0;
 }
