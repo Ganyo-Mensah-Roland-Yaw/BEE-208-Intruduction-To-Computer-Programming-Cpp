@@ -1,20 +1,16 @@
 #include <iostream>
-using namespace std;
+#include <string>
 
 int main() {
-    char ch;
-    int vowel_count = 0;
+    std::string userInput;
+    std::cout << "Enter a string: ";
+    std::cin >> userInput;
 
-    cout << "Enter characters ('q' to stop): ";
-    cin >> ch;
-
-    while (ch != 'q') {
-        if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
-            ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
-            vowel_count++;
-        cin >> ch;
+    if (userInput == "hello") {
+        std::cout << "Hello!\n";
+    } else {
+        std::cout << "Goodbye!\n";
     }
 
-    cout << "Number of vowels: " << vowel_count << endl;
     return 0;
 }
