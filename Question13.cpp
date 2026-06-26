@@ -1,11 +1,17 @@
 #include <iostream>
-using namespace std;
 
 int main() {
-    int sum = 0;
-    for (int i = 1; i <= 10; i++)
-        sum += i;
+    int a, b;
+    std::cout << "Enter value for a and b: ";
+    std::cin >> a >> b;
 
-    cout << "Sum = " << sum << endl; // Output: 55
+    std::cout << "Before swap: a = " << a << ", b = " << b << "\n";
+
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+
+    std::cout << "After swap: a = " << a << ", b = " << b << "\n";
+
     return 0;
 }
