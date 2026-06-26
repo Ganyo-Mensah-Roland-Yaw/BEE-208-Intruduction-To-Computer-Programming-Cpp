@@ -1,16 +1,14 @@
 #include <iostream>
-using namespace std;
 
 int main() {
-    int arr[] = {5, 3, 8, 1, 9, 2};
-    int size = 6;
-    int smallest = arr[0];
+    int num = 4; // Binary: 00000100
 
-    for (int i = 1; i < size; i++) {
-        if (arr[i] < smallest)
-            smallest = arr[i];
-    }
+    int leftShifted = num << 1;   // Shift left by 1:  00001000 (8)
+    int rightShifted = num >> 1;  // Shift right by 1: 00000010 (2)
 
-    cout << "Smallest: " << smallest << endl; // Output: 1
+    std::cout << "Original: " << num << "\n";
+    std::cout << "Left Shifted by 1 (4 * 2): " << leftShifted << "\n";
+    std::cout << "Right Shifted by 1 (4 / 2): " << rightShifted << "\n";
+
     return 0;
 }
