@@ -2,18 +2,10 @@
 using namespace std;
 
 int main() {
-    int a, b;
-    cout << "Enter two values: ";
-    cin >> a >> b;
+    int sum = 0;
+    for (int i = 1; i <= 10; i++)
+        sum += i;
 
-    cout << "Before swap: a = " << a << ", b = " << b << endl;
-
-    // XOR swap trick - no temp variable needed
-    a = a ^ b;
-    b = a ^ b;
-    a = a ^ b;
-
-    cout << "After swap:  a = " << a << ", b = " << b << endl;
-
+    cout << "Sum = " << sum << endl; // Output: 55
     return 0;
 }

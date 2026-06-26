@@ -2,12 +2,13 @@
 using namespace std;
 
 int main() {
-    int a, b;
-    cout << "Enter two integers: ";
-    cin >> a >> b;
-
-    int larger = (a > b) ? a : b;
-    cout << "The larger value is: " << larger << endl;
-
+    int i = 1;
+    while (i <= 10) {
+        if (i % 2 == 0) {
+            cout << i << " ";  // only prints even numbers
+        }
+        i++;
+    }
+    cout << endl;
     return 0;
 }

@@ -2,14 +2,16 @@
 using namespace std;
 
 int main() {
-    int a, b;
-    cout << "Enter two integer values: ";
-    cin >> a >> b;
+    int num, sum = 0;
 
-    if (a > b)
-        cout << "First value is greater" << endl;
-    else
-        cout << "Second value is greater" << endl;
+    cout << "Enter numbers (non-multiple of 3 to stop): ";
+    cin >> num;
 
+    while (num % 3 == 0) {
+        sum += num;
+        cin >> num;
+    }
+
+    cout << "Sum of multiples of 3: " << sum << endl;
     return 0;
 }

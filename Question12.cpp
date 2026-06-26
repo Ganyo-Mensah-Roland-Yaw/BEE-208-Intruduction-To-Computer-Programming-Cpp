@@ -2,14 +2,13 @@
 using namespace std;
 
 int main() {
-    int num;
+    int n;
     cout << "Enter a number: ";
-    cin >> num;
+    cin >> n;
 
-    if (num % 2 != 0 && num % 3 == 0)
-        cout << num << " is both odd and divisible by 3." << endl;
-    else
-        cout << num << " is NOT both odd and divisible by 3." << endl;
-
+    for (int i = 1; i <= n; i++) {
+        if (i % 2 != 0)
+            cout << i << " ";
+    }
     return 0;
 }

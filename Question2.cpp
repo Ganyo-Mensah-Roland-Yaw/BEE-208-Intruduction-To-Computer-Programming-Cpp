@@ -1,16 +1,18 @@
 #include <iostream>
-#include <cmath>
+
 using namespace std;
 
 int main() {
-    double radius;
-    const double PI = 3.14159265358979;
+    string input;
+    int count = 0;
 
-    cout << "Enter the radius: ";
-    cin >> radius;
+    while (true) {
+        cout << "Enter a string ('done' to stop): ";
+        cin >> input;
+        if (input == "done") break;
+        count++;
+    }
 
-    double area = PI * pow(radius, 2);
-    cout << "Area of the circle: " << area << endl;
-
+    cout << "Number of strings entered: " << count << endl;
     return 0;
 }

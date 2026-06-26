@@ -1,11 +1,13 @@
 #include <iostream>
 
 using namespace std;
+
 int main()
 {
+
     int num;
-    int sum = 0;
-    cout << "Enter integers (negative to stop): ";
+
+    cout << "Enter integers (negative to stop): " << endl;
     while (true) {
         cin >> num;
         if (num < 0) break;

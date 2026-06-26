@@ -1,16 +1,14 @@
 #include <iostream>
-#include <cctype>
 using namespace std;
 
 int main() {
-    char ch;
-    cout << "Enter a character: ";
-    cin >> ch;
+    int day = 3;
 
-    if (ch >= 'A' && ch <= 'Z' && isupper(ch))
-        cout << "Uppercase letter" << endl;
-    else
-        cout << "Not an uppercase letter" << endl;
-
+    switch (day) {
+        case 1: cout << "Monday";    break;
+        case 2: cout << "Tuesday";   break;
+        case 3: cout << "Wednesday"; break;
+        default: cout << "Other day";
+    }
     return 0;
 }
