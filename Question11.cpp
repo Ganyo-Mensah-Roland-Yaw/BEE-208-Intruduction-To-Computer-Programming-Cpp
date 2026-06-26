@@ -1,12 +1,13 @@
 #include <iostream>
-using namespace std;
 
 int main() {
-    cout << "Countdown: ";
-    for (int i = 10; i >= 1; i--) {
-        cout << i << " ";  // i-- decreases by 1 each time
-    }
-    cout << endl;
-    cout << "Blast off!" << endl;
+    int count = 5;
+
+    count++; // Increment: count becomes 6
+    std::cout << "Incremented: " << count << "\n";
+
+    count--; // Decrement: count becomes 5 again
+    std::cout << "Decremented: " << count << "\n";
+
     return 0;
 }
