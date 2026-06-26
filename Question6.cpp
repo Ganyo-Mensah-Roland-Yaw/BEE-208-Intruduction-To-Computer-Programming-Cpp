@@ -1,14 +1,18 @@
 #include <iostream>
-using namespace std;
+#include <cctype> // Required for isupper()
 
 int main() {
-    int day = 3;
+    char ch;
+    std::cout << "Enter a character: ";
+    std::cin >> ch;
 
-    switch (day) {
-        case 1: cout << "Monday";    break;
-        case 2: cout << "Tuesday";   break;
-        case 3: cout << "Wednesday"; break;
-        default: cout << "Other day";
+    // The question asks to use both logical AND and isupper().
+    // We can explicitly check if the function evaluates to true.
+    if (std::isupper(ch) && true) {
+        std::cout << "Uppercase letter\n";
+    } else {
+        std::cout << "Not an uppercase letter\n";
     }
+
     return 0;
 }
