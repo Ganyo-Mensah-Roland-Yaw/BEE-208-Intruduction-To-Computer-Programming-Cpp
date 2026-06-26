@@ -1,18 +1,17 @@
 #include <iostream>
-
-using namespace std;
+#include <cmath> // Required for pow()
 
 int main() {
-    string input;
-    int count = 0;
+    double radius;
+    const double PI = 3.141592653589793;
 
-    while (true) {
-        cout << "Enter a string ('done' to stop): ";
-        cin >> input;
-        if (input == "done") break;
-        count++;
-    }
+    std::cout << "Enter the radius of the circle: ";
+    std::cin >> radius;
 
-    cout << "Number of strings entered: " << count << endl;
+    // Using the power function for exponentiation (r^2)
+    double area = PI * std::pow(radius, 2);
+
+    std::cout << "The area of the circle is: " << area << "\n";
+
     return 0;
 }
