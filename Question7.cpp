@@ -1,11 +1,17 @@
 #include <iostream>
-using namespace std;
+#include <string>
 
 int main() {
-    for (int i = 1; i <= 10; i++) {
-        if (i == 6) break;  // stops when i reaches 6
-        cout << i << " ";
+    std::string text;
+    std::cout << "Enter a string: ";
+    std::cin >> text;
+
+    // Searching string for 'a' using standard string find operations
+    if (text.find('a') != std::string::npos) {
+        std::cout << "Contains 'a'\n";
+    } else {
+        std::cout << "Does not contain 'a'\n";
     }
-    cout << endl;
+
     return 0;
 }
