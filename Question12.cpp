@@ -1,14 +1,15 @@
 #include <iostream>
-using namespace std;
 
 int main() {
-    int n;
-    cout << "Enter a number: ";
-    cin >> n;
+    int num;
+    std::cout << "Enter a number: ";
+    std::cin >> num;
 
-    for (int i = 1; i <= n; i++) {
-        if (i % 2 != 0)
-            cout << i << " ";
+    if ((num % 2 != 0) && (num % 3 == 0)) {
+        std::cout << num << " is both odd and divisible by 3.\n";
+    } else {
+        std::cout << num << " does not meet both conditions.\n";
     }
+
     return 0;
 }
